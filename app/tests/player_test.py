@@ -17,7 +17,7 @@ class TestPlayer(unittest.TestCase):
 
     def test_players_draw(self):
         result = rock_paper_scissors(self.player1, self.player1)
-        self.assertEqual(None, result)
+        self.assertEqual("It's A Draw", result)
 
     def test_rock_beats_scissors(self):
         result = rock_paper_scissors(self.player1, self.player2)

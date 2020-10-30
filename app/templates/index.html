@@ -1,3 +1,16 @@
-from flask import render_template, request, redirect
-from app import app
-from app.models.player import *
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>ROCK! PAPER! SCISSORS!</h1>
+    <h2> Which one will you choose?</h2>
+        <form class="form-inline" action="/rock-paper-scissors" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="choice">Rock, paper or scissors?:</label>
+            <input type="text" name="choice" id="choice">
+            <input type="submit" value="Confirm choice">
+        </form>
+    
+
+{% endblock %}

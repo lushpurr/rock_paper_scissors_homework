@@ -1,5 +1,5 @@
-from models.player import *
-from tests.player_test import *
+from app.models.player import *
+
 
 def rock_paper_scissors(player1, player2):
 # Rock Beats Scissors
@@ -14,4 +14,4 @@ def rock_paper_scissors(player1, player2):
         return "Paper Beats Rock"
 #draw
     elif player1.hand == player2.hand:
-        return None
+        return "It's A Draw"
