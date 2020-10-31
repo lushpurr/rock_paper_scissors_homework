@@ -26,18 +26,20 @@ header {
     justify-content: space-around;
 }
 
-.winner-container h3{
+.winner-container{
     display:flex;
     flex-direction: column;
     width: 80%;
     margin:auto;
+    text-align: center;
 }
 
 #splash-screen-grid-container {
     display: grid;
     grid-template-areas: 
     'rules main_splash more_rules';
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 2fr 2fr 2fr;
+
 }
     
 #rules{
@@ -45,6 +47,9 @@ header {
     /* height: 150px; */
     background-color: transparent;
     grid-area: rules;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
   }
 
   #main_splash{

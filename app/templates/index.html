@@ -21,10 +21,10 @@
                 </div>
             </form>
             <div class="winner-container">
+                <h2>RESULTS</h2>
                 {% for winner in winner_list %}
                 <div class="winners">
-                  <h3>The winner is {{ winner.name }} with {{ winner.hand }}</h3>
-
+                  <h3> In game {{ winner_list.index(winner) + 1 }} the winner was {{ winner.name }} with {{ winner.hand }}</h3>
                 </div>
                 {% endfor %}
                 </div>

@@ -3,16 +3,20 @@
 {% block content %}
 <div id="splash-screen-grid-container">
     <section id="rules">
-        Rules of Rock, Paper, Scissors: Each player enters their name and picks either 'Rock', 'Paper' or "Scissors". 
+        <h1>RULES</h1>Each player take it in turns to enter their name and picks either 'Rock', 'Paper' or "Scissors". <br><br>
+
+        'Paper' beats 'Rock'<br>
+        'Rock' beats 'Scissors'<br>
+        'Scissors' beats 'Paper'<br><br>
+        <h2>CLICK IMAGE TO PLAY</h2>
     </section>
     <hgroup id="main">
-        <img src="{{ url_for('static', filename='images/rockpaperscissors.jpg') }}" alt="rock paper scissors image">
+        <a href="/home"><img src="{{ url_for('static', filename='images/rockpaperscissors.jpg') }}" alt="rock paper scissors image">
+        </a>
     </hgroup>
 
     <section id="more_rules">
-        'Paper' beats 'Rock'<br>
-        'Rock' beats 'Scissors'<br>
-        'Scissors' beats 'Paper'
+
     </section>
 </div>
 
