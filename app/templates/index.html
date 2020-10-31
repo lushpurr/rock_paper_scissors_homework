@@ -5,10 +5,17 @@
     <h1>ROCK! PAPER! SCISSORS!</h1>
     <h2> Which one will you choose?</h2>
         <form class="form-inline" action="/rock-paper-scissors" method="post">
-            <label for="name">Name:</label>
+            <!--Player One Input-->
+            <label for="name">Player One Name:</label>
             <input type="text" name="name" id="name">
             <label for="choice">Rock, paper or scissors?:</label>
-            <input type="text" name="choice" id="choice">
+            <input type="text" name="hand1" id="hand"> 
+            <!--Player Two Input-->
+            <label for="name">Player Two Name:</label>
+            <input type="text" name="hand" id="hand">
+            <label for="choice">Rock, paper or scissors?:</label>
+            <input type="text" name="hand2" id="hand">
+            <!--Submit-->
             <input type="submit" value="Confirm choice">
         </form>
     
