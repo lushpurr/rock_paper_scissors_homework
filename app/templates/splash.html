@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<hgroup>
+    <h1>ROCK! PAPER! SCISSORS!</h1>
+    <img src="{{ url_for('static', filename='images/rockpaperscissors.jpg') }}" alt="rock paper scissors image">
+    <h2> Which one will you choose?</h2>
+</hgroup>
+
+<section>
+    Rules of Rock, Paper, Scissors: Each player enters their name and picks either 'Rock', 'Paper' or "Scissors". <br><br>
+    'Paper' beats 'Rock'<br>
+    'Rock' beats 'Scissors'<br>
+    'Scissors' beats 'Paper'
+</section>
+
+{% endblock %}

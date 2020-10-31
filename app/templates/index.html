@@ -8,6 +8,7 @@
             <h2> Which one will you choose?</h2>
         </hgroup>
             <form class="form-inline" action="/get-result" method="post">
+                <div class="input-boxes">
                 <!--Player One Input-->
                 <label for="name1">Player One Name:</label>
                 <input type="text" name="name1" id="name1">
@@ -20,8 +21,9 @@
                 <input type="password" name="hand2" id="hand2">
                 <!--Submit-->
                 <input type="submit" value="Confirm choice">
+                </div>
             </form>
-            <div class="event-container">
+            <div class="winner-container">
                 {% for winner in winner_list %}
                 <div class="winners">
                   <h3>The winner is {{ winner.name }} with {{ winner.hand }}</h3>

@@ -1,10 +1,30 @@
 body {
     font-family: Helvetica, Arial;
+    background-color: cornflowerblue;
+    margin:0px
+}
+
+hgroup {
+    font-family: 'Annie Use Your Telescope';
+    text-align:center;
+    padding: 5px;
+    background-color: yellow;
 }
 
 .form-inline {
-    display=flex;
-    flex-direction:column;
     width: 80%;
-    margins:auto;
+    margin:auto;
+    color:black;
+    border:black solid 10px;
+    border-radius: 25%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.winner-container h3{
+    display:flex;
+    flex-direction: column;
+    color:yellow;
+    width: 80%;
+    margin:auto;
 }
