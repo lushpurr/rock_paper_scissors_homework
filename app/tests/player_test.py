@@ -1,6 +1,6 @@
 import unittest
-from models.player import Player
-from models.rock_paper_scissors import *
+from app.models.player import Player
+from app.models.rock_paper_scissors import *
 
 class TestPlayer(unittest.TestCase):
 

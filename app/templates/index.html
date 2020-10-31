@@ -7,21 +7,29 @@
             <h1>ROCK! PAPER! SCISSORS!</h1>
             <h2> Which one will you choose?</h2>
         </hgroup>
-            <form class="form-inline" action="/rock-paper-scissors" method="post">
+            <form class="form-inline" action="/get-result" method="post">
                 <!--Player One Input-->
-                <label for="name">Player One Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="choice">Rock, paper or scissors?:</label>
-                <input type="password" name="hand1" id="hand"> 
+                <label for="name1">Player One Name:</label>
+                <input type="text" name="name1" id="name1">
+                <label for="hand1">Rock, paper or scissors?:</label>
+                <input type="password" name="hand1" id="hand1"> <br>
                 <!--Player Two Input-->
-                <label for="name">Player Two Name:</label>
-                <input type="text" name="hand" id="hand">
-                <label for="choice">Rock, paper or scissors?:</label>
-                <input type="password" name="hand2" id="hand">
+                <label for="name2">Player Two Name:</label>
+                <input type="text" name="name2" id="name2">
+                <label for="hand2">Rock, paper or scissors?:</label>
+                <input type="password" name="hand2" id="hand2">
                 <!--Submit-->
                 <input type="submit" value="Confirm choice">
             </form>
-    </div>
+            <div class="event-container">
+                {% for winner in winner_list %}
+                <div class="winners">
+                  <h3>The winner is {{ winner.name }} with {{ winner.hand }}</h3>
+
+                </div>
+                {% endfor %}
+                </div>
+
     
 
 {% endblock %}
