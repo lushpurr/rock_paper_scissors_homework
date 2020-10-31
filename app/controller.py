@@ -21,5 +21,5 @@ def rock_paper_scissors():
     player2 = Player(name=name2, hand=hand2)
     result = get_result(player1, player2)              #
     # return render_template('index.html', title="Winner", winner_list=winner_list)
-    return redirect('/')
+    return redirect('/home')
 

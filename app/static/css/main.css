@@ -1,15 +1,20 @@
 body {
     font-family: Helvetica, Arial;
-    background-color: cornflowerblue;
+    background-color: rgb(134, 181, 206);
     margin:0px
 }
 
-hgroup {
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: 'Annie Use Your Telescope';
     text-align:center;
     padding: 5px;
-    background-color: yellow;
+    background-color: rgb(131, 148, 165);
 }
+
 
 .form-inline {
     width: 80%;
@@ -24,7 +29,34 @@ hgroup {
 .winner-container h3{
     display:flex;
     flex-direction: column;
-    color:yellow;
     width: 80%;
     margin:auto;
 }
+
+#splash-screen-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'rules main_splash more_rules';
+    grid-template-columns: 3fr 3fr 3fr;
+}
+    
+#rules{
+    width: max;
+    /* height: 150px; */
+    background-color: transparent;
+    grid-area: rules;
+  }
+
+  #main_splash{
+    width: max;
+    /* height: 150px; */
+    background-color: transparent;
+    grid-area: main_splash;
+  }
+
+  #more_rules{
+    width: max;
+    /* height: 150px; */
+    background-color: transparent;
+    grid-area: more_rules;
+    }
