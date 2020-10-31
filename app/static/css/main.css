@@ -1,0 +1,10 @@
+body {
+    font-family: Helvetica, Arial;
+}
+
+.form-inline {
+    display=flex;
+    flex-direction:column;
+    width: 80%;
+    margins:auto;
+}

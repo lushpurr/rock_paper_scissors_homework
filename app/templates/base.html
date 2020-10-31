@@ -4,10 +4,12 @@
       <title>{{ title }}</title>
     </head>
     <body>
-        <ul>
-          <li clas="navLink"><a href="/">Home</a></li>
-        </ul>
-        <hr>
+        <main>
+          <ul>
+            <li clas="navLink"><a href="/">Home</a></li>
+            </ul>
+            <hr>
         {% block content %}{% endblock %}
+        </main>
     </body>
 </html>
