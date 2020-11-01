@@ -23,3 +23,16 @@ def rock_paper_scissors():
     # return render_template('index.html', title="Winner", winner_list=winner_list)
     return redirect('/home')
 
+@app.route("/play", methods=['POST'])
+def play():
+    name1 = request.form['name1']
+    hand1 = request.form['hand1']
+    # name2 = ['Computer']
+    hand2 = random.choices(hands)
+    player1 = Player(name=name1, hand=hand1)
+    player2 = Player("Computer", hand=hand2)
+    result = get_result(player1, player2)              #
+    # return render_template('index.html', title="Winner", winner_list=winner_list)
+    return redirect('/home')
+
+
