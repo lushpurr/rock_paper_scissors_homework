@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="form">
+
+            <form class="form-inline" action="/get-result" method="post">
+                <div class="input-boxes">
+                <!--Player One Input-->
+                <label for="name1">Player One Name:</label>
+                <input type="text" name="name1" id="name1">
+                <label for="hand1">Rock, paper or scissors?:</label>
+                <input type="dropdown" name="hand1" id="hand1">
+                <option value="Rock">Rock</option>
+                <option value="Scissors"Scissors></option>
+                <option value="Paper">Paper</option> <br>
+                <!--Player Two Input-->
+                <label for="name2">Player Two Name:</label>
+                <!-- <input type="text" name="name2" id="name2"> -->
+                <label for="hand2">Rock, paper or scissors?:</label>
+                <input type="password" name="hand2" id="hand2">
+                <!--Submit-->
+                <input type="submit" value="Confirm choice">
+                </div>
+            </form>
+            <div class="winner-container">
+                <h2>RESULTS</h2>
+                {% for winner in winner_list %}
+                <div class="winners">
+                  <h3> In game {{ winner_list.index(winner) + 1 }} the winner was {{ winner.name }} with {{ winner.hand }}</h3>
+                </div>
+                {% endfor %}
+                </div>
+
+    
+
+{% endblock %}

@@ -4,6 +4,7 @@ from app.controller import *
 winner1 = Player("Ed", "Rock")
 winner2 = Player("Sheila", "Scissors")
 winner_list = [winner1, winner2]
+hands = ["Rock", "Paper", "Scissors"]
 
 def get_result(player1, player2):
 # Rock Beats Scissors - player 1 wins
@@ -34,7 +35,7 @@ def get_result(player1, player2):
         return "Paper Beats Rock"
 #draw
     elif player1.hand == player2.hand:
-        return "It's A Draw"
+        return None # "It's A Draw"
 
 # error
     else:
